@@ -1,0 +1,36 @@
+@use "../abstracts/variables"as *;
+@use "../layout/addon"as *;
+
+/*********** banner reboot style ***************/
+.intro {
+
+  &-top {
+    @extend .theme-white;
+    text-align: center;
+    background-color: var(--bs-body-color);
+    padding-block: 5vh;
+  }
+
+  .subtitle {
+    margin-bottom: 1rem;
+  }
+
+  .wrapper {
+    display: grid;
+    gap: 1rem;
+
+    @include media-breakpoint-up(md) {
+      display: flex;
+      gap: 5vw;
+
+      &>* {
+        flex: 1;
+      }
+
+    }
+  }
+
+  &-body {
+    margin-block: 4vh;
+  }
+}

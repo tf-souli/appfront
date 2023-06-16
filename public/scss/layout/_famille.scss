@@ -1,0 +1,41 @@
+.famille {
+  &-content {
+    margin-block: 3rem;
+    display: grid;
+    gap: 1rem;
+  }
+
+  &-title::first-letter {
+    text-transform: uppercase;
+  }
+
+  &-item {
+    display: flex;
+    gap: 1rem;
+    place-items: center;
+    background-color: rgba(127, 135, 184, 0.2);
+    padding: .75rem;
+    height: 70px;
+
+    &__title {
+      font-size: 1.15rem;
+      letter-spacing: .06em;
+      margin-bottom: 0;
+    }
+
+    &__img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+
+      &-wrapper {
+        flex: 0 0 auto;
+        width: 30%;
+        background-color: white;
+        padding: 1rem;
+        height: calc(100% + 15px);
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

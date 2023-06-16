@@ -1,0 +1,30 @@
+@function pow($number, $exponent) {
+    @if (round($exponent) !=$exponent) {
+        @return exp($exponent * ln($number));
+    }
+
+    $value: 1;
+
+    @if $exponent>0 {
+        @for $i from 1 through $exponent {
+            $value: $value * $number;
+        }
+    }
+
+    @else if $exponent < 0 {
+        @for $i from 1 through -$exponent {
+            $value: $value / $number;
+        }
+    }
+
+    @return $value;
+}
+
+
+@function primary-gradient($deg) {
+    @return -webkit-linear-gradient($deg, #3F3F3F 9.36%, $primary 72.38%);
+}
+
+@function secondary-gradient($deg) {
+    @return -webkit-linear-gradient($deg, $primary-100 9.36%, $primary-300 73.72%);
+}

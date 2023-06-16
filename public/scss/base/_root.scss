@@ -1,0 +1,25 @@
+@use '../abstracts/variables' as *;
+
+
+/*!
+* Souli Template v1.0 (safa.souli@yahoo.com)
+* Copyright 2022 Safa Souli Author
+*/
+
+:root {
+    $variable-prefix: 'tf-';
+
+    @each $key,
+    $value in $global {
+        --#{$variable-prefix}#{$key}: #{$value};
+    }
+
+    @each $shade-key,
+    $shade-values in $shades {
+
+        @each $shade-range-key,
+        $shade-range-value in $shade-values {
+            --#{$variable-prefix}#{$shade-key}-#{$shade-range-key}: #{$shade-range-value};
+        }
+    }
+}

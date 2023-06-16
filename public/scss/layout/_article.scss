@@ -1,0 +1,62 @@
+@use "../abstracts/variables"as *;
+@use "../abstracts/mixins"as *;
+@use "../layout/addon"as *;
+
+.article {
+  .banner-top {
+    @extend .theme-white;
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    background: var(--bs-body-color);
+    padding-block: 5vh;
+    margin-bottom: 5vh;
+  }
+
+  .article__categories {
+    text-transform: capitalize;
+    letter-spacing: 0.34em;
+    margin-bottom: 1rem;
+  }
+
+  .subtitle {
+    font-weight: 400;
+  }
+
+  .about * {
+    color: #acacac;
+  }
+
+  .alt {
+    @include grid-section;
+  }
+
+  .alt:not(:last-of-type) {
+    padding-bottom: 5vh;
+    margin-bottom: 5vh;
+    border-bottom: 1px solid var(--bs-border-color);
+  }
+
+
+  @include media-breakpoint-up(lg) {
+    .alt.Gauche {
+      @include grid-section("photo ..""photo subtitle""photo title""photo about""photo descr""photo btn""photo ..", 5, 'left');
+    }
+
+    .alt.Droite {
+      @include grid-section(".. photo""subtitle photo""title photo""about photo""descr photo""btn photo"".. photo", 5, 'right');
+    }
+
+    .alt.Alternance:nth-child(2n) {
+      @include grid-section("photo ..""photo subtitle""photo title""photo about""photo descr""photo btn""photo ..", 5, 'left');
+    }
+
+    .alt.Alternance:nth-child(2n+1) {
+      @include grid-section(".. photo""subtitle photo""title photo""about photo""descr photo""btn photo"".. photo", 5, 'right');
+    }
+  }
+
+  .grid-wrapper {
+    @include grid-section;
+  }
+}

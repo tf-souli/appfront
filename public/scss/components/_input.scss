@@ -1,0 +1,118 @@
+@use '../abstracts/variables'as *;
+
+.form-control {
+    border-radius: 5px;
+}
+
+input.invalid {
+    border-color: #B31C29;
+    background-color: white;
+}
+
+.inputabonner {
+    padding: .7rem;
+    margin-bottom: .5rem;
+}
+
+.inputabonner,
+.btnabonner {
+    width: 100%;
+}
+
+#select_compose_option {
+    margin-top: 1.5rem;
+    font-size: $btn-font-size-lg;
+}
+
+.form-check {
+    display: inline-flex;
+    gap: .5rem;
+    width: 100%;
+}
+
+.form-check .form-check-input {
+    float: unset;
+    margin-left: unset;
+    margin-top: .25rem;
+    flex-shrink: 0;
+}
+
+.content-top .content-search {
+    .form-group {
+        padding: .3rem 1rem;
+        border-radius: 5px;
+    }
+
+    input {
+        background: unset;
+        color: white;
+    }
+
+    .content-search-icon {
+        color: white;
+    }
+
+    .form-control.is-blank::placeholder {
+        color: white;
+    }
+}
+
+
+#rechercheProduit {
+    color: var(--bs-body-bg);
+}
+
+
+
+.quantity {
+    width: 50px;
+    padding: 0 12px;
+    vertical-align: top;
+    text-align: center;
+    outline: none;
+    -moz-appearance: textfield;
+    border: 0;
+    background: var(--bs-body-bg);
+    color: var(--bs-body-color);
+    height: 100%;
+
+    &-wrapper {
+        display: flex;
+        border: 1px solid var(--bs-body-color);
+        border-radius: 4px;
+    }
+
+    &,
+    &-decrement,
+    &-increment {
+        height: 100%;
+        user-select: none;
+    }
+
+    &-decrement,
+    &-increment {
+
+        display: grid;
+        place-content: center;
+        height: 100% !important;
+        width: 30px;
+        line-height: 38px;
+        background: var(--bs-body-bg);
+        color: var(--bs-body-color);
+        text-align: center;
+        font-weight: bold;
+        cursor: pointer;
+        padding-inline: 1.25rem;
+
+        &:active {
+            background: var(--bs-body-color);
+            color: var(--bs-body-bg);
+        }
+    }
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}

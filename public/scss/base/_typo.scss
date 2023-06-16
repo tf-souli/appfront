@@ -1,0 +1,152 @@
+@use '../abstracts/variables'as *;
+
+body {
+    --bs-body-font-size: 0.875rem;
+    font-weight: 300;
+    font-size: var(--bs-body-font-size);
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5 {
+    font-family: $font-family-title;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.h0 {
+    font-size: 2.281rem;
+}
+
+h1,
+.h1 {
+    margin-top: 0;
+    font-size: 1.802rem;
+}
+
+h2,
+.h2 {
+    font-size: 1.602rem;
+}
+
+h3,
+.h3 {
+    font-size: 1.424rem;
+}
+
+h4,
+.h4 {
+    font-size: 1.266rem;
+}
+
+h5,
+.h5 {
+    font-size: 1.125rem;
+}
+
+small,
+.text_small {
+    font-size: 0.889rem;
+}
+
+p,
+.p {
+    font-family: $font-family-base;
+    line-height: 1.6;
+    color: var(--bs-body-color);
+    margin-bottom: unset;
+    font-size: var(--bs-body-font-size);
+    font-weight: 400;
+}
+
+
+@include media-breakpoint-up(md) {
+    body {
+        --bs-body-font-size: 1rem;
+    }
+
+    .h0 {
+        font-size: 3.583rem;
+    }
+
+    h1,
+    .h1 {
+        margin-top: 0;
+        font-size: 2.488rem;
+    }
+
+    h2,
+    .h2 {
+        font-size: 2.074rem;
+    }
+
+    h3,
+    .h3 {
+        font-size: 1.728rem;
+    }
+
+    h4,
+    .h4 {
+        font-size: 1.44rem;
+    }
+
+    h5,
+    .h5 {
+        font-size: 1.2rem;
+    }
+
+    small,
+    .text_small {
+        font-size: 0.833rem;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+
+    .h0 {
+        font-size: 4.768rem;
+    }
+
+    h1,
+    .h1 {
+        margin-top: 0;
+        font-size: 3.052rem;
+    }
+
+    h2,
+    .h2 {
+        font-size: 2.441rem;
+    }
+
+    h3,
+    .h3 {
+        font-size: 1.953rem;
+    }
+
+    h4,
+    .h4 {
+        font-size: 1.563rem;
+    }
+
+    h5,
+    .h5 {
+        font-size: 1.25rem;
+    }
+
+    small,
+    .text_small {
+        font-size: 0.8rem;
+    }
+
+    p,
+    .p {
+        line-height: 1.8;
+    }
+}

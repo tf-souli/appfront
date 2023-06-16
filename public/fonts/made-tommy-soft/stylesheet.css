@@ -1,0 +1,182 @@
+@font-face {
+    font-family: 'MADE Tommy Soft';
+    src: url('MADETommySoft-Black.eot');
+    src: url('MADETommySoft-Black.eot?#iefix') format('embedded-opentype'),
+        url('MADETommySoft-Black.woff2') format('woff2'),
+        url('MADETommySoft-Black.woff') format('woff'),
+        url('MADETommySoft-Black.ttf') format('truetype'),
+        url('MADETommySoft-Black.svg#MADETommySoft-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MADE Tommy Soft Outline';
+    src: url('MADETommySoftOutline-Black.eot');
+    src: url('MADETommySoftOutline-Black.eot?#iefix') format('embedded-opentype'),
+        url('MADETommySoftOutline-Black.woff2') format('woff2'),
+        url('MADETommySoftOutline-Black.woff') format('woff'),
+        url('MADETommySoftOutline-Black.ttf') format('truetype'),
+        url('MADETommySoftOutline-Black.svg#MADETommySoftOutline-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MADE Tommy Soft';
+    src: url('MADETommySoft-Bold.eot');
+    src: url('MADETommySoft-Bold.eot?#iefix') format('embedded-opentype'),
+        url('MADETommySoft-Bold.woff2') format('woff2'),
+        url('MADETommySoft-Bold.woff') format('woff'),
+        url('MADETommySoft-Bold.ttf') format('truetype'),
+        url('MADETommySoft-Bold.svg#MADETommySoft-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MADE Tommy Soft Outline';
+    src: url('MADETommySoftOutline-Bold.eot');
+    src: url('MADETommySoftOutline-Bold.eot?#iefix') format('embedded-opentype'),
+        url('MADETommySoftOutline-Bold.woff2') format('woff2'),
+        url('MADETommySoftOutline-Bold.woff') format('woff'),
+        url('MADETommySoftOutline-Bold.ttf') format('truetype'),
+        url('MADETommySoftOutline-Bold.svg#MADETommySoftOutline-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MADE Tommy Soft Outline';
+    src: url('MADETommySoftOutline-Medium.eot');
+    src: url('MADETommySoftOutline-Medium.eot?#iefix') format('embedded-opentype'),
+        url('MADETommySoftOutline-Medium.woff2') format('woff2'),
+        url('MADETommySoftOutline-Medium.woff') format('woff'),
+        url('MADETommySoftOutline-Medium.ttf') format('truetype'),
+        url('MADETommySoftOutline-Medium.svg#MADETommySoftOutline-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MADE Tommy Soft';
+    src: url('MADETommySoft-ExtraBold.eot');
+    src: url('MADETommySoft-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('MADETommySoft-ExtraBold.woff2') format('woff2'),
+        url('MADETommySoft-ExtraBold.woff') format('woff'),
+        url('MADETommySoft-ExtraBold.ttf') format('truetype'),
+        url('MADETommySoft-ExtraBold.svg#MADETommySoft-ExtraBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MADE Tommy Soft';
+    src: url('MADETommySoft-Light.eot');
+    src: url('MADETommySoft-Light.eot?#iefix') format('embedded-opentype'),
+        url('MADETommySoft-Light.woff2') format('woff2'),
+        url('MADETommySoft-Light.woff') format('woff'),
+        url('MADETommySoft-Light.ttf') format('truetype'),
+        url('MADETommySoft-Light.svg#MADETommySoft-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MADE Tommy Soft Outline';
+    src: url('MADETommySoftOutline-Light.eot');
+    src: url('MADETommySoftOutline-Light.eot?#iefix') format('embedded-opentype'),
+        url('MADETommySoftOutline-Light.woff2') format('woff2'),
+        url('MADETommySoftOutline-Light.woff') format('woff'),
+        url('MADETommySoftOutline-Light.ttf') format('truetype'),
+        url('MADETommySoftOutline-Light.svg#MADETommySoftOutline-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MADE Tommy Soft Outline';
+    src: url('MADETommySoftOutline-ExtraBold.eot');
+    src: url('MADETommySoftOutline-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('MADETommySoftOutline-ExtraBold.woff2') format('woff2'),
+        url('MADETommySoftOutline-ExtraBold.woff') format('woff'),
+        url('MADETommySoftOutline-ExtraBold.ttf') format('truetype'),
+        url('MADETommySoftOutline-ExtraBold.svg#MADETommySoftOutline-ExtraBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MADE Tommy Soft';
+    src: url('MADETommySoft-Medium.eot');
+    src: url('MADETommySoft-Medium.eot?#iefix') format('embedded-opentype'),
+        url('MADETommySoft-Medium.woff2') format('woff2'),
+        url('MADETommySoft-Medium.woff') format('woff'),
+        url('MADETommySoft-Medium.ttf') format('truetype'),
+        url('MADETommySoft-Medium.svg#MADETommySoft-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MADE Tommy Soft Outline';
+    src: url('MADETommySoftOutline.eot');
+    src: url('MADETommySoftOutline.eot?#iefix') format('embedded-opentype'),
+        url('MADETommySoftOutline.woff2') format('woff2'),
+        url('MADETommySoftOutline.woff') format('woff'),
+        url('MADETommySoftOutline.ttf') format('truetype'),
+        url('MADETommySoftOutline.svg#MADETommySoftOutline') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MADE Tommy Soft';
+    src: url('MADETommySoft-Thin.eot');
+    src: url('MADETommySoft-Thin.eot?#iefix') format('embedded-opentype'),
+        url('MADETommySoft-Thin.woff2') format('woff2'),
+        url('MADETommySoft-Thin.woff') format('woff'),
+        url('MADETommySoft-Thin.ttf') format('truetype'),
+        url('MADETommySoft-Thin.svg#MADETommySoft-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MADE Tommy Soft Outline';
+    src: url('MADETommySoftOutline-Thin.eot');
+    src: url('MADETommySoftOutline-Thin.eot?#iefix') format('embedded-opentype'),
+        url('MADETommySoftOutline-Thin.woff2') format('woff2'),
+        url('MADETommySoftOutline-Thin.woff') format('woff'),
+        url('MADETommySoftOutline-Thin.ttf') format('truetype'),
+        url('MADETommySoftOutline-Thin.svg#MADETommySoftOutline-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MADE Tommy Soft';
+    src: url('MADETommySoft.eot');
+    src: url('MADETommySoft.eot?#iefix') format('embedded-opentype'),
+        url('MADETommySoft.woff2') format('woff2'),
+        url('MADETommySoft.woff') format('woff'),
+        url('MADETommySoft.ttf') format('truetype'),
+        url('MADETommySoft.svg#MADETommySoft') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

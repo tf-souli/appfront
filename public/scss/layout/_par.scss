@@ -1,0 +1,49 @@
+@use '../abstracts/variables'as *;
+@use '../abstracts/mixins'as *;
+
+.par-wrapper {
+  display: grid;
+  justify-items: start;
+  row-gap: 15vh;
+  row-gap: 15dvh;
+  margin-block: 15vh;
+  margin-block: 15dvh;
+
+  .par {
+    display: grid;
+    justify-items: start;
+    gap: 1rem;
+
+    figure {
+      margin: 0;
+    }
+
+    .btn {
+      margin-top: 1rem;
+    }
+  }
+
+
+  @include media-breakpoint-up(lg) {
+    .par.Centre {
+      .p-wrap {
+        max-width: 1380px;
+        margin-inline: auto;
+        width: 100%;
+      }
+
+      .title {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    .par.Droite {
+      @include grid-section("photo ..""photo title""photo descr""photo btn""photo ..", 3);
+    }
+
+    .par.Gauche {
+      @include grid-section(".. photo""title photo""descr photo""btn photo"".. photo", 3);
+    }
+  }
+}

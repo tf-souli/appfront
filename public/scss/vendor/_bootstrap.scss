@@ -1,0 +1,39 @@
+// ^README: naming variables (primary, secondary, tertiary, quaternary, quinary, senary, septenary, octonary, nonary, and denary)
+@import "../../../node_modules/bootstrap/scss/_functions";
+
+$font-family-title: "Marcellus",
+sans-serif;
+$font-family-base: "MADE Tommy Soft",
+sans-serif !default;
+$body-bg: white;
+$body-color: #3D3D3D;
+$font-weight-base: normal;
+$primary: #D29F7C;
+$secondary: #555555;
+$border-color: #E8E8E8;
+$border-radius: 0;
+$gutter-x: 0;
+$grid-breakpoints: (xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
+
+@import "../../../node_modules/bootstrap/scss/_variables";
+@import "../../../node_modules/bootstrap/scss/_mixins";
+
+$custom-colors: ("border-color": $border-color, );
+$theme-colors: map-merge($custom-colors, $theme-colors);
+$spacer: 5rem;
+$grid-gutter-width: 1.5rem;
+$gutters: (0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+);
+
+@import "../../../node_modules/bootstrap/scss/bootstrap";

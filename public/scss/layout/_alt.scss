@@ -1,0 +1,89 @@
+@use "../abstracts/variables"as *;
+@use "../abstracts/mixins"as *;
+
+/* #Overview on page niveau 2
+============================= */
+
+.submenu {
+  @extend .bg-light;
+  display: grid;
+  margin-block: 15vh;
+  margin-block: 15dvh;
+
+  @include media-breakpoint-down(lg) {
+    padding-block: 10vh;
+    padding-block: 10dvh;
+    gap: 10vh;
+    gap: 10dvh;
+
+    .alt {
+      --bs-gutter-x: 1.5rem;
+      --bs-gutter-y: 1.5rem;
+      padding-right: calc(var(--bs-gutter-x) * 0.5);
+      padding-left: calc(var(--bs-gutter-x) * 0.5);
+      @include grid-section;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .alt {
+      min-height: 100vh;
+      min-height: 100dvh;
+      column-gap: 0 !important;
+
+      &:nth-child(2n) {
+        @include grid-section("photo ..""photo subtitle""photo title""photo descr""photo btn""photo ..", 4, 'left');
+      }
+
+      &:nth-child(2n+1) {
+        @include grid-section(".. photo""subtitle photo""title photo""descr photo""btn photo"".. photo", 4, 'right');
+      }
+
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+
+      &>*:not(img) {
+        margin-inline: clamp(3rem, 9vh, 15%);
+      }
+    }
+  }
+}
+
+.article-overview {
+  display: grid;
+  gap: 15vh;
+  gap: 15dvh;
+
+  .article-group>.title {
+    text-align: center;
+    color: var(--bs-primary);
+    margin-bottom: 7vh;
+  }
+
+  .alt {
+    padding-bottom: 5vh;
+    margin-bottom: 5vh;
+    border-bottom: 1px solid var(--bs-border-color);
+    @include grid-section;
+  }
+
+  @include media-breakpoint-up(lg) {
+    .alt.Gauche {
+      @include grid-section("photo ..""photo subtitle""photo title""photo descr""photo btn""photo ..", 4, 'left');
+    }
+
+    .alt.Droite {
+      @include grid-section(".. photo""subtitle photo""title photo""descr photo""btn photo"".. photo", 4, 'right');
+    }
+
+    .alt.Alternance:nth-child(2n) {
+      @include grid-section("photo ..""photo subtitle""photo title""photo descr""photo btn""photo ..", 4, 'left');
+    }
+
+    .alt.Alternance:nth-child(2n+1) {
+      @include grid-section(".. photo""subtitle photo""title photo""descr photo""btn photo"".. photo", 4, 'right');
+    }
+  }
+}

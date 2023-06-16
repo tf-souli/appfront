@@ -1,0 +1,102 @@
+
+@use "../components/buttons" as *;
+
+.table-responsive {
+    margin-top: 1.5rem;
+
+    .dataTables_filter {
+        margin-top: 2rem;
+    }
+
+    table.dataTable {
+
+        border-collapse: separate;
+        border-spacing: 0 15px;
+
+        thead th,
+        table.dataTable thead td {
+            border-bottom: unset;
+        }
+
+        tbody tr {
+            background: unset;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+            border-radius: 15px;
+        }
+
+        &.no-footer {
+            border-bottom: unset;
+        }
+
+        tbody td {
+            background: white;
+
+        }
+
+        .rounded-3 {
+            width: fit-content;
+            font-size: 12px;
+        }
+
+        tbody td:first-child {
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+
+        tbody td:last-child {
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+
+        p[class^='px-'] {
+            padding: .3rem !important;
+        }
+
+        a[class^='px-'] {
+            padding: 0;
+            @extend .btn;
+            @extend .px-3;
+            @extend .py-1;
+        }
+
+        a:hover {
+            filter: brightness(80%);
+        }
+
+        .even td {
+            background: rgba(0, 0, 0, 0.03) !important;
+        }
+    }
+
+}
+
+.dataTables_wrapper {
+
+    .dataTables_info,
+    .dataTables_paginate {
+        margin-top: -1.5rem !important;
+    }
+}
+
+
+
+table.datagrid {
+
+    &>thead {
+        background: rgba(0, 0, 0, 0.1);
+    }
+
+    thead,
+    tbody,
+    tfoot,
+    tr,
+    td,
+    th {
+        border-color: #cecece;
+        border-width: 1px;
+    }
+}
+
+.table-stripped {
+    font-size: .8rem;
+}
