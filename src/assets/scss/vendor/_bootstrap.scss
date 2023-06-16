@@ -1,5 +1,5 @@
 // ^README: naming variables (primary, secondary, tertiary, quaternary, quinary, senary, septenary, octonary, nonary, and denary)
-@import "../../../node_modules/bootstrap/scss/_functions";
+@import "../../../../node_modules/bootstrap/scss/_functions";
 
 $font-family-title: "Marcellus",
 sans-serif;
@@ -21,8 +21,8 @@ $grid-breakpoints: (xs: 0,
   xxl: 1400px,
 );
 
-@import "../../../node_modules/bootstrap/scss/_variables";
-@import "../../../node_modules/bootstrap/scss/_mixins";
+@import "../../../../node_modules/bootstrap/scss/_variables";
+@import "../../../../node_modules/bootstrap/scss/_mixins";
 
 $custom-colors: ("border-color": $border-color, );
 $theme-colors: map-merge($custom-colors, $theme-colors);
@@ -36,4 +36,4 @@ $gutters: (0: 0,
   5: $spacer * 3,
 );
 
-@import "../../../node_modules/bootstrap/scss/bootstrap";
+@import "../../../../node_modules/bootstrap/scss/bootstrap";
